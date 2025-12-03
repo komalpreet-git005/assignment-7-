@@ -1,0 +1,138 @@
+/* General Styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.3rem;
+    color: #333;
+}
+
+/* Form Styling */
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.textarea {
+    height: 90px;
+    resize: none;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #0066ff;
+    color: #fff;
+}
+
+.primary:hover {
+    background: #0052cc;
+}
+
+/* Task Card Styling */
+.task-list {
+    margin-top: 15px;
+}
+
+.task {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.task-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.task-desc {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.task.completed .task-title,
+.task.completed .task-desc {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Buttons inside tasks */
+.task-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.task-btns button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: #28a745;
+    color: #fff;
+}
+
+.complete-btn:hover {
+    background: #218838;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #000;
+}
+
+.edit-btn:hover {
+    background: #e0a800;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
